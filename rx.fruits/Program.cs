@@ -105,7 +105,10 @@
 
 #region Level 16: repeat
 
-var fruits = new[] { "apple" }.ToObservable();
-fruits.Repeat(3).Subscribe(Console.WriteLine);
+// var fruits = new[] { "apple" }.ToObservable();
+// fruits.Repeat(3).Subscribe(Console.WriteLine);
 
 #endregion
+
+var tenRandomFruits = new[] { "apple", "banana", "cherry", "durian", "elderberry", "fig", "grape", "honeydew", "imbe", "jackfruit" }.ToObservable();
+tenRandomFruits.Subscribe(Console.WriteLine);

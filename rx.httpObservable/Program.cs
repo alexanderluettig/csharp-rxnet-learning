@@ -8,10 +8,11 @@ var randomJokeUri = "https://api.chucknorris.io/jokes/random?category=dev";
 
 Console.WriteLine("Getting random joke...");
 var randomJokeObserver = new HttpClientObservable<Joke>(randomJokeUri);
-randomJokeObserver.Subscribe(
-    joke => Console.WriteLine(joke.Value),
-    ex => Console.WriteLine("Error: " + ex.Message),
-    () => Console.WriteLine("Random joke completed"));
+randomJokeObserver
+    .Subscribe(
+        joke => Console.WriteLine(joke.Value),
+        ex => Console.WriteLine("Error: " + ex.Message),
+        () => Console.WriteLine("Random joke completed"));
 
 // obs.Subscribe(new ResponseObserver<Joke>()); // same as above
 

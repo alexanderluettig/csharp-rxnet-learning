@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rx.fruits", "rx.fruits\rx.f
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rx.httpObservable", "rx.httpObservable\rx.httpObservable.csproj", "{EB61850B-2FC6-4ABD-965D-01AF814CFF29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rx.hotObservables", "rx.hotObservables\rx.hotObservables.csproj", "{5D180F7E-3FEF-4892-B603-F48785F568EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rx.coldObservable", "rx.coldObservable\rx.coldObservable.csproj", "{8B49D8FB-E810-4611-B88A-31CC256858FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{EB61850B-2FC6-4ABD-965D-01AF814CFF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB61850B-2FC6-4ABD-965D-01AF814CFF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB61850B-2FC6-4ABD-965D-01AF814CFF29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D180F7E-3FEF-4892-B603-F48785F568EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D180F7E-3FEF-4892-B603-F48785F568EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D180F7E-3FEF-4892-B603-F48785F568EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D180F7E-3FEF-4892-B603-F48785F568EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B49D8FB-E810-4611-B88A-31CC256858FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B49D8FB-E810-4611-B88A-31CC256858FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B49D8FB-E810-4611-B88A-31CC256858FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B49D8FB-E810-4611-B88A-31CC256858FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -13,17 +13,26 @@ namespace rx.httpObservable
 
         public IDisposable Subscribe(IObserver<T> observer)
         {
+            var cancellationTokenSource = new CancellationTokenSource();
+
             Task.Run(async () =>
             {
                 var httpClient = new HttpClient();
                 var response = await httpClient.GetAsync(_uri);
                 var data = await response.Content.ReadAsAsync<T>();
 
-                observer.OnNext(data);
-                observer.OnCompleted();
-            });
+                if (response.IsSuccessStatusCode)
+                {
+                    observer.OnNext(data);
+                    observer.OnCompleted();
+                }
+                else
+                {
+                    observer.OnError(new Exception("Error with StatusCode: " + response.StatusCode));
+                }
+            }, cancellationTokenSource.Token);
 
-            return Disposable.Empty;
+            return Disposable.Create(() => cancellationTokenSource.Cancel());
         }
     }
 }

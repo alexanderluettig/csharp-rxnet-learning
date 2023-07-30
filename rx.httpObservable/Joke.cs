@@ -9,5 +9,10 @@ namespace rx.httpObservable
         public required string Updated_at { get; set; }
         public required string Url { get; set; }
         public required string Value { get; set; }
+
+        public override string ToString()
+        {
+            return Value;
+        }
     }
 }

@@ -5,13 +5,13 @@ namespace rx.playground
 {
     public class Consumer
     {
-        private readonly static ISubject<int> _subject = new Subject<int>();
+        private readonly ISubject<int> _subject = new Subject<int>();
 
-        public Consumer()
+        public Consumer(int buffersize = 1, TimeSpan interval = default)
         {
             _subject
-                .Buffer(10)
-                .Zip(Observable.Interval(TimeSpan.FromSeconds(1)), (x, y) => x)
+                .Buffer(buffersize)
+                .Zip(Observable.Interval(interval), (x, y) => x)
                 .Subscribe(x =>
                 {
                     foreach (var item in x)
@@ -21,6 +21,6 @@ namespace rx.playground
                 });
         }
 
-        public static void Add(int value) => _subject.OnNext(value);
+        public void Add(int value) => _subject.OnNext(value);
     }
 }

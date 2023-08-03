@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rx.warmingColdObservables",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rx.playground", "rx.playground\rx.playground.csproj", "{7290EB81-BEDB-483B-B5F0-5BE3D57A8FD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rx.rateLimitClient", "rx.rateLimitClient\rx.rateLimitClient.csproj", "{C765B663-6D31-4274-B63D-33A6F5882EBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{7290EB81-BEDB-483B-B5F0-5BE3D57A8FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7290EB81-BEDB-483B-B5F0-5BE3D57A8FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7290EB81-BEDB-483B-B5F0-5BE3D57A8FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C765B663-6D31-4274-B63D-33A6F5882EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C765B663-6D31-4274-B63D-33A6F5882EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C765B663-6D31-4274-B63D-33A6F5882EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C765B663-6D31-4274-B63D-33A6F5882EBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
